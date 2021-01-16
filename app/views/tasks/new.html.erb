@@ -1,0 +1,9 @@
+<h1>Add a restaurant</h1>
+<div class="container">
+  <%= simple_form_for @task do |f| %>
+  <%= f.input :title %>
+  <%= f.input :details %>
+  <%= f.input :completed %>
+  <%= f.submit "Create!" %>
+  <% end %>
+</div>
