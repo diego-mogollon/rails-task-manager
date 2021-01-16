@@ -1,5 +1,8 @@
+<div class="container">
 <h1>My tasks</h1>
 <% @tasks.each do |task| %>
   <h4><span><%= task.completed ? (fa_icon "check-square") : (fa_icon "square") %></span>
-    <span> <%= link_to "Task", tasks_path %><%= task.title %></span></></h4>
+    <span> <%= link_to task.title, task_path(task), method: :get %></span></></h4>
+    <%= link_to "Delete task", task_path(task), method: :delete %>
 <% end %>
+</div>
