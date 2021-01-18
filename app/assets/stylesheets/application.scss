@@ -13,13 +13,15 @@
  *= require_tree .
  *= require_self
  */
-/*@import url()*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import "font-awesome";
 @import "bootstrap/scss/bootstrap";
 
 $mainBlue: #19456b;
 $lightBlue: #11698e;
 $lightGreen: #16c79a;
+$dangerRed: #ec4646;
+
 
 @mixin flexFeats {
   height: 50vh;
@@ -28,6 +30,7 @@ $lightGreen: #16c79a;
   align-items: center;
   flex-direction: column;
   padding: 25px 50px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -35,4 +38,10 @@ $lightGreen: #16c79a;
    h1 {
     color: $mainBlue;
   }
+}
+
+.delete-task a:hover {
+  background: rgba( 185, 147, 214, 0.5 );
+  box-shadow: ec4646;
+  color: $dangerRed;
 }
