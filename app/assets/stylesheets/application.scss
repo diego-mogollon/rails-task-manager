@@ -13,5 +13,26 @@
  *= require_tree .
  *= require_self
  */
- @import "font-awesome";
+/*@import url()*/
+@import "font-awesome";
 @import "bootstrap/scss/bootstrap";
+
+$mainBlue: #19456b;
+$lightBlue: #11698e;
+$lightGreen: #16c79a;
+
+@mixin flexFeats {
+  height: 50vh;
+  display: grid;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px 50px;
+}
+
+.container {
+  @include flexFeats();
+   h1 {
+    color: $mainBlue;
+  }
+}
